@@ -11,16 +11,33 @@ body {
   flex-direction: column;
 }
 
+@keyframes fadeIn {
+0%{
+  opacity: 0;
+  transform: translateY(-20px);
+  }
+100%{
+  opacity: 1;
+  transform:translateY(0);
+  }
+}
+
 .logo {
   font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 1.5rem;
-  padding: 15px 40px;
-  border: 3px solid #ffdd00;
+  padding: 15px 60px;
+  border: 3px solid rgb(251, 255, 0);
   border-radius: 5px;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
+  animation: fadeIn 1.5s easy-out forwards;
+}
+
+.logo:hover{
+transform: scale(1.05);
+box-shadow: 0 0 15px rgba(255, 221, 0, 0.4);
 }
 
 .nav-links {
@@ -31,6 +48,7 @@ body {
   padding: 0;
   margin: 0;
   align-items: center;
+  animation: fadeIn 0.8s ease-out forwards;
 }
 
 .nav-links a {
