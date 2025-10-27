@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo - HotelesYa</title>
+  <link rel="stylesheet" href="css/catalogo.css" />
+
+  <!-- Leaflet (mapa sin API key) -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-o9N1j7kCjQJz0n+rLlj9E7Ck3Yp1tLhho0C5mS0p3Js="
+    crossorigin=""
+  />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">HotelesYa</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="catalogo.html" class="active">Catálogo</a></li>
+      <li><a href="destino.html">Destinos</a></li>
+      <li><a href="#">Nosotros</a></li>
+      <li><a href="#">Promociones</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <h1>Catálogo de Hoteles</h1>
+
+    <!-- 🔎 Barra de búsqueda -->
+    <div class="search-bar">
+      <input type="text" id="busqueda" placeholder="Buscar hotel..." />
+      <button id="btnBuscar">Buscar</button>
+    </div>
+
+    <!-- 🗺️ Mapa -->
+    <div id="map"></div>
+  </main>
+
+  <!-- Leaflet JS -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-o9N1j7kCjQJz0n+rLlj9E7Ck3Yp1tLhho0C5mS0p3Js="
+    crossorigin=""
+  ></script>
+
+  <!-- Script del catálogo -->
+  <script src="js/catalogo.js"></script>
+</body>
+</html>
